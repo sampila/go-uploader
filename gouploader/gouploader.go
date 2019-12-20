@@ -8,7 +8,7 @@ import (
   "os"
   "path/filepath"
   "mime/multipart"
-  "github.com/sampila/go-randomstr"
+  "github.com/sampila/go-randomstr/randomstr"
 )
 
 func UploadFile(f *multipart.FileHeader, t string) (string, error){

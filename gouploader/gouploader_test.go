@@ -2,9 +2,14 @@ package gouploader
 
 import(
   "testing"
+  "os"
   "mime/multipart"
   "github.com/stretchr/testify/assert"
 )
+
+func TestMain(m *testing.M){
+  os.Exit(m.Run())
+}
 
 func TestUploadFileEmpty(t *testing.T){
   var mp *multipart.FileHeader
